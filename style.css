@@ -23,9 +23,20 @@
   -webkit-font-smoothing: antialiased;
   font-size: 1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  /* border: solid 1px red; */
+}
+
+.span-xl{
+  font-family: "poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  letter-spacing: .9px;
 }
 
 /* content */
+
+/* aside */
 
 body {
   display: flex;
@@ -34,7 +45,7 @@ body {
 }
 
 .content {
-  grid-template-columns: minmax(250px, 10%) auto;  
+  grid-template-columns: minmax(300px, 15%) auto;  
   height: 100%;
   display: grid;
 }
@@ -43,6 +54,35 @@ body {
   background-image: var(--dark-gradient);
   padding-top: 48px;
 }
+
+.nav {
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  color: var(--light);
+  padding: 64px 24px;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  padding: 12px 0;
+  transition: ease-in-out .2s;
+
+}
+
+.nav li:hover {
+  padding-left: 4px;
+  color: var(--white);
+}
+
+.nav li i {
+  width: 36px;
+  text-align: center;
+}
+
 
 .logo-container {
   background-image: var(--brand-gradient);
@@ -65,6 +105,88 @@ body {
   font-size: 1.5rem;
   color: var(--light);
 }
+
+/* header */
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: var(light);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  background: var(--grey);
+}
+
+.header * {
+  border: .5px solid red;
+}
+
+/* top header */
+
+.top-bar {
+  margin: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.search-ct {
+  flex: auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.search-input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 6px 24px;
+  border-radius: 50px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  max-width: 600px;
+}
+
+.user-id-ct {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-icon {
+  max-width: 48px;
+  border-radius: 50px;
+}
+
+.username {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* bottom header */
+
+.bottom-bar {
+  margin: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.user-greeting-ct {
+  display: flex;
+  align-items: center;
+}
+
+.user-greeting-ct *{
+  display: block;
+}
+
+
 
 /* footer */
 

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Odin Dashboard</title>
   <link rel="stylesheet" href="./style.css">
-  <link rel= "icon" media="all" type="image/x-icon" href="favicon.png" />
+  <link rel="icon" media="all" type="image/x-icon" href="favicon.png" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
   <div class="content">
     <aside class="aside">
@@ -17,31 +19,85 @@
         <i class="material-icons logo-icon">dashboard</i>
         <span>Techboard</span>
       </div>
-      <div class="links-container-1">
-        <div>
-          <i class="material-icons logo-icon">dashboard</i>
-        <span>Techboard</span>
-        <div>
-          <i class="material-icons logo-icon">dashboard</i>
-        <span>Techboard</span>
-        <div>
-          <i class="material-icons logo-icon">dashboard</i>
-        <span>Techboard</span>
-        <div>
-          <i class="material-icons logo-icon">dashboard</i>
-        <span>Techboard</span>
-        <div>
-          <i class="material-icons logo-icon">dashboard</i>
-        <span>Techboard</span>
-        <div>
-          <i class="material-icons logo-icon">dashboard</i>
-        <span>Techboard</span>
+
+      <ul class="nav">
+        <li>
+          <i class="fa-sharp fa-solid fa-house fa-lg"></i>
+          <span class="span-xl">Home</span>
+        </li>
+        <li>
+          <i class="fa-sharp fa-solid fa-user fa-lg"></i>
+          <span class="span-xl">Profile</span>
+        </li>
+        <li>
+          <i class="fa-sharp fa-solid fa-message fa-lg"></i>
+          <span class="span-xl">Messages</span>
+        </li>
+        <li>
+          <i class="fa-sharp fa-solid fa-backward fa-lg"></i>
+          <span class="span-xl">History</span>
+        </li>
+        <li>
+          <i class="fa-sharp fa-sharp fa-solid fa-list-check fa-lg"></i>
+          <span class="span-xl">Tasks</span>
+        </li>
+        <li>
+          <i class="fa-sharp fa-solid fa-users fa-lg"></i>
+          <span class="span-xl">Communities</span>
+        </li>
+
+        <br>
+        <br>
+
+        <li>
+          <i class="fa-sharp fa-solid fa-gear fa-lg"></i>
+          <span class="span-xl">Settings</span>
+        </li>
+        <li>
+          <i class="fa-sharp fa-solid fa-circle-info fa-lg"></i>
+          <span class="span-xl">Support</span>
+        </li>
+        <li>
+          <i class="fa-sharp fa-solid fa-shield fa-lg"></i>
+          <span class="span-xl">Privacy</span>
+        </li>
+
+      </ul>
+
+    </aside>
+
+    <main class="main">
+      <div class="header">
+        <div class="top-bar">
+          <div class="search-ct">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            <input type="text" class="search-input">
+            <i class="fa-regular fa-bell fa-lg"></i>
+          </div>
+          <div class="user-id-ct">
+            <img class="user-icon" src="./img/user-icon.png" alt="user-icon">
+            <span class="username">Rodrigo Hickenbick</span>
+          </div>
+        </div>
+        <div class="bottom-bar">
+          <div class="user-greeting-ct">
+            <img class="user-profile" src="./img/user-icon.png" alt="user-profile">
+            <div>
+              <span>Hi there,</span>
+              <span>Rodrigo Hickenbick (@rhickenbick)</span>
+            </div>
+          </div>
+
+          <div class="user-btns-ct">
+
+          </div>
+
         </div>
       </div>
-    </aside>
-    <main class="main">
 
+      <div class="Projects"></div>
     </main>
+
   </div>
 
   <!-- footer -->
@@ -58,4 +114,5 @@
 
   <script src="./script.js"></script>
 </body>
+
 </html>
